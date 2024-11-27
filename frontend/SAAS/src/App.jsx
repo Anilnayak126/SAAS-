@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar'
 
+import "./App.css";
+import Navbar from "./components/Navbar";
+import FeatureHighlights from "./components/screens/home/FeatureHighlightsScreen";
+import HeroSection from "./components/screens/home/HomeScreen";
+import PricingPlans from "./components/screens/home/PricingPlans";
+import SupportAndResources from "./components/screens/home/SupportAndResources";
+import Testimonials from "./components/screens/home/Testimonials";
 
 function App() {
-  
-
   return (
     <>
-    <Navbar/>
-      Jay jaga
-      jay gopinath 
-      </>
-  )
+      
+      <HeroSection/>
+      <FeatureHighlights/>
+      <Testimonials/>
+      <PricingPlans/>
+      <SupportAndResources/>
+      
+    </>
+  );
 }
 
-export default App
+export default App;
